@@ -23,6 +23,11 @@ sudo cp ~/konfs/configuration.nix /etc/nixos/configuration.nix
 exec feh --bg-fill ~/konfs/sfondo_nixos_black.png
 ```
 
+### Scompattare tar
+``` bash
+tar -xvzf filename.tar.gz
+```
+
 ## Nix
 Documentazione: [Nixos-Rebuild](https://nixos.wiki/wiki/Nixos-rebuild)
 
@@ -53,5 +58,6 @@ sudo nix-collect-garbage --delete-older-than 15d
 ~/.config/xfce4
 ~/.config
 ~/.themes
+~/.icons
 ~/.local/share/fonts
 ```
