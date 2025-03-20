@@ -43,14 +43,14 @@
     # Enable the X11 windowing system.
     enable = true;
 
-    # displayManager = {
-    #   lightdm.enable = true;
-    # };
-
-    displayManager.ly = {
-      enable = true;
-      defaultUser = "kevin";
+    displayManager = {
+      lightdm.enable = true;
     };
+
+    # displayManager.ly = {
+    #   enable = true;
+    #   defaultUser = "kevin";
+    # };
 
     # Enable the XFCE Desktop Environment.
     desktopManager = {
