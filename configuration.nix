@@ -43,8 +43,13 @@
     # Enable the X11 windowing system.
     enable = true;
 
-    displayManager = {
-      lightdm.enable = true;
+    # displayManager = {
+    #   lightdm.enable = true;
+    # };
+
+    displayManager.ly = {
+      enable = true;
+      defaultUser = "kevin";
     };
 
     # Enable the XFCE Desktop Environment.
@@ -102,6 +107,7 @@
       pkgs.glances              # activity monitor
       pkgs.gparted              # partizionamento dischi
       pkgs.unzip                # utility archive zip
+      pkgs.ly                   # display manager
       
       # style
       pkgs.neofetch             # terminal system info
