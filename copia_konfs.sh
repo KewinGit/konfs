@@ -3,4 +3,4 @@
 cp -rf ~/.config ~/konfs/
 cp -rf ~/.themes ~/konfs/
 cp -rf ~/.icons ~/konfs/
-cp -rf ~/.local/share/fonts ~/konfs/
+# cp -rf ~/.local/share/fonts ~/konfs/
