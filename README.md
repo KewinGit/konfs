@@ -8,6 +8,10 @@
 2. nella ~/ home fare il clone del repo `konfs`
 3. eseguire lo script `aggiorna.sh`
 4. eseguire lo script `incolla_konfs.sh`
+5. nel file `/etc/nixos/configuration.nix` cambiare il valore con il nome dell'unità root presente sul computer. (eseguendo un `df` fa la lista delle unità, guarda quella con "Mounted on" = / , dovrebbe essere tipo /dev/nome)
+    ``` nix
+    boot.loader.grub.device = "/dev/sda";  # <---- cambiare
+    ```
 
 ### Clonare repo
 ``` bash
