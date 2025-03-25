@@ -2,6 +2,13 @@
 
 ## Generali
 
+### Passaggi primo avvio
+
+1. nel file `/etc/nixos/configuration.nix` aggiungere il pacchetto `git`
+2. nella ~/ home fare il clone del repo `konfs`
+3. eseguire lo script `aggiorna.sh`
+4. eseguire lo script `incolla_konfs.sh`
+
 ### Clonare repo
 ``` bash
 cd ~
@@ -20,7 +27,7 @@ sudo cp ~/konfs/configuration.nix /etc/nixos/configuration.nix
 
 ### Sfondo
 ``` bash
-exec feh --bg-fill ~/konfs/sfondo_nixos_black.png
+feh --bg-fill ~/konfs/sfondo_nixos_black.png
 ```
 
 ### Scompattare tar
