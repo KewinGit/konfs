@@ -3,9 +3,9 @@
 echo - Copio le cartelle delle configurazioni xfce nel git repo
 echo
 
-cp -rf ~/.config ~/konfs/
-cp -rf ~/.themes ~/konfs/
-cp -rf ~/.icons ~/konfs/
+sudo cp -rf ~/.config ~/konfs/
+sudo cp -rf ~/.themes ~/konfs/
+sudo cp -rf ~/.icons ~/konfs/
 # cp -rf ~/.local/share/fonts ~/konfs/
 
 echo
