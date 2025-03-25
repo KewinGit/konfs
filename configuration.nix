@@ -114,6 +114,7 @@
       pkgs.gparted              # partizionamento dischi
       pkgs.unzip                # utility archive zip
       pkgs.ly                   # display manager
+      pkgs.rustdesk             # collegamento remoto
       
       # style
       pkgs.neofetch             # terminal system info
