@@ -79,6 +79,24 @@ sudo nixos-rebuild list-generations
 sudo nix-collect-garbage --delete-older-than 15d
 ```
 
+## Virtualizzazione
+
+Nella creazione di una vm Windows aggiungere i driver Virtio:
+
+[Virtio driver iso](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/?C=M;O=A)
+
+Da dentro la vm windows:
+
+- Eseguire l'agent Virtio
+
+  [virtio-win-guest-tools.exe](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.266-1/)
+
+- Eseguire l'agent spice
+  
+  [Spice](https://www.spice-space.org/download.html)
+  
+  [Spice guest tools](https://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-latest.exehttps://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-latest.exe)
+
 ## Xfce
 
 ### Cartelle configurazioni
@@ -90,6 +108,5 @@ sudo nix-collect-garbage --delete-older-than 15d
 
 Non serve per ora
 ```
-~/.config/xfce4
 ~/.local/share/fonts
 ```
