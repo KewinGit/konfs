@@ -156,6 +156,9 @@
   virtualisation.libvirtd.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
 
+  virtualisation.libvirtd.qemu.vhostUserPackages = [ pkgs.virtiofsd ];  # per abilitare lo share delle cartelle con le vm
+
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
