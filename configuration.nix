@@ -102,7 +102,7 @@
   #   wantedBy = [ "multi-user.target" ];
   # };
 
-  systemd.kevin.services.foo = {
+  systemd.user.services.foo = {
     script = ''
       feh --bg-fill ~/konfs/sfondo_nixos_black.png
     '';
