@@ -8,9 +8,26 @@
 2. nella ~/ home fare il clone del repo `konfs`
 3. eseguire lo script `aggiorna.sh`
 4. eseguire lo script `incolla_konfs.sh`
-5. nel file `/etc/nixos/configuration.nix` cambiare il valore con il nome dell'unità root presente sul computer. (eseguendo un `df` fa la lista delle unità, guarda quella con "Mounted on" = /boot , dovrebbe essere tipo /dev/nome)
+
+#### Boot loader
+
+Su parallels funzionava bene il grub ma sul ferro no, quindi:
+
+1. Funziona il grub, allora:
+
+   nel file `/etc/nixos/configuration.nix` cambiare il valore con il nome dell'unità root presente sul computer. (eseguendo un `df` fa la lista delle unità, guarda quella con "Mounted on" = /boot , dovrebbe essere tipo /dev/nome)
     ``` nix
+    boot.loader.grub.enable = true;
     boot.loader.grub.device = "/dev/sda";  # <---- cambiare
+    boot.loader.grub.useOSProber = true;
+    ```
+
+2. Non funziona il grub, allora:
+
+    usare l'efi
+    ``` nix
+    boot.loader.systemd-boot.enable = true;
+    boot.loader.efi.canTouchEfiVariables = true;
     ```
 
 ### Clonare repo

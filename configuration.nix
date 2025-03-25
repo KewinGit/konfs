@@ -11,10 +11,13 @@
     ];
 
   # Bootloader.
+
+  # Grub (funzionava su vm parallels ma non su ferro)
   # boot.loader.grub.enable = true;
   # boot.loader.grub.device = "/dev/nvme0n1p1"; # Ricordati di modificare questo nome
   # boot.loader.grub.useOSProber = true;
 
+  # Efi (funziona su ferro)
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
