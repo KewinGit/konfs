@@ -83,9 +83,13 @@ sudo nix-collect-garbage --delete-older-than 15d
 
 ### Cartelle configurazioni
 ```
-~/.config/xfce4
 ~/.config
 ~/.themes
 ~/.icons
+```
+
+Non serve per ora
+```
+~/.config/xfce4
 ~/.local/share/fonts
 ```
