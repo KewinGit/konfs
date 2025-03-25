@@ -81,6 +81,15 @@ sudo nix-collect-garbage --delete-older-than 15d
 
 ## Virtualizzazione
 
+### Windows
+
+[Doc](https://sysguides.com/install-a-windows-11-virtual-machine-on-kvm)
+
+- In configurazione da virt manager
+    - Aggiungere Tpm passthrough
+    - todo continuare guida
+
+
 Nella creazione di una vm Windows aggiungere i driver Virtio:
 
 [Virtio driver iso](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/?C=M;O=A)
@@ -94,7 +103,7 @@ Da dentro la vm windows:
 - Eseguire l'agent spice
   
   [Spice](https://www.spice-space.org/download.html)
-  
+
   [Spice guest tools](https://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-latest.exehttps://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-latest.exe)
 
 ## Xfce
