@@ -11,9 +11,12 @@
     ];
 
   # Bootloader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/nvme0n1p1"; # Ricordati di modificare questo nome
-  boot.loader.grub.useOSProber = true;
+  # boot.loader.grub.enable = true;
+  # boot.loader.grub.device = "/dev/nvme0n1p1"; # Ricordati di modificare questo nome
+  # boot.loader.grub.useOSProber = true;
+
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "nixhost"; # Hostname
   #networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
