@@ -8,6 +8,7 @@
 2. nella ~/ home fare il clone del repo `konfs`
 3. eseguire lo script `aggiorna.sh`
 4. eseguire lo script `incolla_konfs.sh`
+5. configurare il git credential manager con la config sia global che user
 
 #### Boot loader
 
@@ -18,7 +19,7 @@ Su parallels funzionava bene il grub ma sul ferro no, quindi:
    nel file `/etc/nixos/configuration.nix` cambiare il valore con il nome dell'unità root presente sul computer. (eseguendo un `df` fa la lista delle unità, guarda quella con "Mounted on" = /boot , dovrebbe essere tipo /dev/nome)
     ``` nix
     boot.loader.grub.enable = true;
-    boot.loader.grub.device = "/dev/sda";  # <---- cambiare
+    boot.loader.grub.device = "/dev/sda";  # <- cambiare
     boot.loader.grub.useOSProber = true;
     ```
 
