@@ -9,6 +9,15 @@
 3. eseguire lo script `aggiorna.sh`
 4. eseguire lo script `incolla_konfs.sh`
 5. configurare il git credential manager con la config sia global che user
+    ```
+    git config --global user.name "nome"    <- mettere nome
+    git config --global user.email "email"  <- mettere email
+    ```
+
+    ```
+    git config user.name "nome"    <- mettere nome
+    git config user.email "email"  <- mettere email
+    ```
 
 #### Boot loader
 
