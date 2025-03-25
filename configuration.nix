@@ -128,8 +128,6 @@
       pkgs.whatsapp-for-linux   # whatsapp
       pkgs.telegram-desktop     # telegram
       pkgs.discord              # discord
-
-      # virtualizzazione TODO
       
     ];
   };
