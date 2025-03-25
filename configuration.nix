@@ -95,11 +95,19 @@
   # Enable touchpad support (enabled default in most desktopManager).
   services.libinput.enable = true;
 
-  systemd.services.foo = {
+  # systemd.services.foo = {
+  #   script = ''
+  #     feh --bg-fill ~/konfs/sfondo_nixos_black.png
+  #     '';
+  #   wantedBy = [ "multi-user.target" ];
+  # };
+
+  systemd.kevin.services.foo = {
     script = ''
       feh --bg-fill ~/konfs/sfondo_nixos_black.png
-      '';
-    wantedBy = [ "multi-user.target" ];
+    '';
+    wantedBy = [ "graphical-session.target" ];
+    partOf = [ "graphical-session.target" ];
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
