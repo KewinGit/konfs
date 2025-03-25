@@ -99,7 +99,7 @@
   users.users.kevin = {
     isNormalUser = true;
     description = "Kevin";
-    extraGroups = [ "networkmanager" "wheel" ]; # aggiungere "libvirtd" per la virtualizzazione
+    extraGroups = [ "networkmanager" "wheel" "libvirtd"];
     packages = with pkgs; [
       # pacchetti utente
 
@@ -147,6 +147,15 @@
     pkgs.wpa_supplicant   # rete
     pkgs.blueman          # bluetooth
   ];
+
+  # Virtualizzazione
+
+  programs.virt-manager.enable = true;
+
+  # users.groups.libvirtd.members = ["kevin"]; # kevin fa già parte del gruppo libvirtd (conf sopra)
+
+  virtualisation.libvirtd.enable = true;
+  virtualisation.spiceUSBRedirection.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
