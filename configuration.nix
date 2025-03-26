@@ -120,6 +120,7 @@
       pkgs.unzip                # utility archive zip
       pkgs.ly                   # display manager
       pkgs.rustdesk             # collegamento remoto
+      pkgs.solaar               # gestione dispositivi logitech
       
       # style
       pkgs.neofetch             # terminal system info
