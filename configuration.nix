@@ -171,7 +171,6 @@
       pkgs.ly                   # display manager
       pkgs.rustdesk             # collegamento remoto
       pkgs.solaar               # dispositivi logitech
-      pkgs.ddccontrol           # impostazioni monitor 
       
       # style
       pkgs.neofetch             # terminal system info
