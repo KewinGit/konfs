@@ -76,19 +76,47 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
-  # services.avahi = {
-  #   enable = true;
-  #   nssmdns4 = true;
-  #   openFirewall = true;
-  # };
+  services.printing.drivers = [ 
+    pkgs.gutenprint # — Drivers for many different printers from many different vendors.
+    pkgs.gutenprintBin # — Additional, binary-only drivers for some printers.
+    pkgs.hplip # — Drivers for HP printers.
+    pkgs.hplipWithPlugin # — Drivers for HP printers, with the proprietary plugin. Use NIXPKGS_ALLOW_UNFREE=1 nix-shell -p hplipWithPlugin --run 'sudo -E hp-setup' to add the printer, regular CUPS UI doesn't seem to work.
+    pkgs.postscript-lexmark # — Postscript drivers for Lexmark
+    pkgs.samsung-unified-linux-driver # — Proprietary Samsung Drivers
+    pkgs.splix # — Drivers for printers supporting SPL (Samsung Printer Language).
+    pkgs.brlaser # — Drivers for some Brother printers
+    pkgs.brgenml1lpr #  — Generic drivers for more Brother printers [1]
+    pkgs.brgenml1cupswrapper  # — Generic drivers for more Brother printers [1]
+    pkgs.cnijfilter2 # — Drivers for some Canon Pixma devices (Proprietary driver)
+	]; 
 
-  services.avahi.nssmdns4 = false; # Use the settings from below
-  # settings from avahi-daemon.nix where mdns is replaced with mdns4
-  system.nssModules = pkgs.lib.optional (!config.services.avahi.nssmdns) pkgs.nssmdns;
-  system.nssDatabases.hosts = with pkgs.lib; optionals (!config.services.avahi.nssmdns) (mkMerge [
-    (mkBefore [ "mdns4_minimal [NOTFOUND=return]" ]) # before resolve
-    (mkAfter [ "mdns4" ]) # after dns
-  ]);
+  services.avahi = {
+    enable = true;
+    nssmdns = true;
+    openFirewall = true;
+    publish = {
+      enable = true;
+      userServices = true;
+    };
+  };
+  services.printing = {
+    listenAddresses = [ "*:631" ];
+    allowFrom = [ "all" ];
+    browsing = true;
+    defaultShared = true;
+    browsedConf = ''
+    BrowseDNSSDSubTypes _cups,_print
+    BrowseLocalProtocols all
+    BrowseRemoteProtocols all
+    CreateIPPPrinterQueues All
+    BrowseProtocols all
+      '';
+  };
+  
+  networking.firewall = {
+    allowedTCPPorts = [ 631 ];
+    allowedUDPPorts = [ 631 ];
+  };
 
 
   # Enable sound with pipewire.
