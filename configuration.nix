@@ -108,6 +108,16 @@
 
   hardware.logitech.wireless.enable = true;
 
+  # Printing
+  services.printing.enable = true;
+
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    openFirewall = true;
+  };
+
+
   # Enable touchpad support (enabled default in most desktopManager).
   services.libinput.enable = true;
 
