@@ -196,6 +196,7 @@
 
     pkgs.git              # git
     pkgs.kitty            # terminale
+    pkgs.alacritty        # terminale 2
     pkgs.wpa_supplicant   # rete
     pkgs.blueman          # bluetooth
   ];
