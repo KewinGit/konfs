@@ -1,3 +1,15 @@
-2025/03/20-15:56:46.356 95a Reusing MANIFEST /home/kevin/.config/google-chrome/Default/WebStorage/7/IndexedDB/indexeddb.leveldb/MANIFEST-000001
-2025/03/20-15:56:46.356 95a Recovering log #4
-2025/03/20-15:56:46.357 95a Reusing old log /home/kevin/.config/google-chrome/Default/WebStorage/7/IndexedDB/indexeddb.leveldb/000004.log 
+2025/03/25-12:46:52.135 b79 Reusing MANIFEST /home/kevin/.config/google-chrome/Default/WebStorage/7/IndexedDB/indexeddb.leveldb/MANIFEST-000001
+2025/03/25-12:46:52.135 b79 Recovering log #4
+2025/03/25-12:46:52.135 b79 Reusing old log /home/kevin/.config/google-chrome/Default/WebStorage/7/IndexedDB/indexeddb.leveldb/000004.log 
+2025/03/25-12:46:57.339 b6e Level-0 table #8: started
+2025/03/25-12:46:57.346 b6e Level-0 table #8: 34613 bytes OK
+2025/03/25-12:46:57.355 b6e Delete type=0 #4
+2025/03/25-12:46:57.355 b6e Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2025/03/25-12:46:57.355 b6e Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x02\x01\x1f\x04\x03\x01\x06\x00Q\x00U\x00E\x00U\x00E\x00D\x03\x00\x00\x00\x00\x00\x00L@\x03\x00`\xe0]>[yB\x00\x03\x00\x00\x00\x00\x00\x00"@' @ 717 : 1
+2025/03/25-12:46:57.355 b6e Compacting 1@1 + 1@2 files
+2025/03/25-12:46:57.362 b6e Generated table #9@1: 63 keys, 9098 bytes
+2025/03/25-12:46:57.363 b6e Compacted 1@1 + 1@2 files => 9098 bytes
+2025/03/25-12:46:57.371 b6e compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/03/25-12:46:57.371 b6e Delete type=2 #8
+2025/03/25-12:46:57.371 b6e Delete type=2 #5
+2025/03/25-12:46:57.372 b6e Manual compaction at level-1 from '\x00\x02\x01\x1f\x04\x03\x01\x06\x00Q\x00U\x00E\x00U\x00E\x00D\x03\x00\x00\x00\x00\x00\x00L@\x03\x00`\xe0]>[yB\x00\x03\x00\x00\x00\x00\x00\x00"@' @ 717 : 1 .. (end); will stop at (end)

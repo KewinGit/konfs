@@ -38,7 +38,6 @@
       <property name="position-locked" type="bool" value="true"/>
       <property name="size" type="uint" value="40"/>
       <property name="plugin-ids" type="array">
-        <value type="int" value="20"/>
         <value type="int" value="7"/>
       </property>
       <property name="enter-opacity" type="uint" value="100"/>
@@ -96,11 +95,6 @@
         <value type="string" value="-logout-dialog"/>
       </property>
       <property name="appearance" type="uint" value="1"/>
-    </property>
-    <property name="plugin-20" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="17424609244.desktop"/>
-      </property>
     </property>
     <property name="plugin-7" type="string" value="tasklist">
       <property name="show-labels" type="bool" value="false"/>

@@ -1,3 +1,15 @@
-2025/03/20-15:12:53.199 229b Reusing MANIFEST /home/kevin/.config/google-chrome/Default/IndexedDB/https_psychic-tribble-r4rqvqp6697rcpp44.github.dev_0.indexeddb.leveldb/MANIFEST-000001
-2025/03/20-15:12:53.200 229b Recovering log #4
-2025/03/20-15:12:53.204 229b Reusing old log /home/kevin/.config/google-chrome/Default/IndexedDB/https_psychic-tribble-r4rqvqp6697rcpp44.github.dev_0.indexeddb.leveldb/000004.log 
+2025/03/25-12:47:35.359 b6d Reusing MANIFEST /home/kevin/.config/google-chrome/Default/IndexedDB/https_psychic-tribble-r4rqvqp6697rcpp44.github.dev_0.indexeddb.leveldb/MANIFEST-000001
+2025/03/25-12:47:35.360 b6d Recovering log #4
+2025/03/25-12:47:35.372 b6d Reusing old log /home/kevin/.config/google-chrome/Default/IndexedDB/https_psychic-tribble-r4rqvqp6697rcpp44.github.dev_0.indexeddb.leveldb/000004.log 
+2025/03/25-15:14:53.828 b6e Level-0 table #8: started
+2025/03/25-15:14:53.843 b6e Level-0 table #8: 604204 bytes OK
+2025/03/25-15:14:53.853 b6e Delete type=0 #4
+2025/03/25-15:14:53.854 b6e Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2025/03/25-15:14:53.854 b6e Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x03\x01\x02\x01'\x00w\x00o\x00r\x00k\x00b\x00e\x00n\x00c\x00h\x00.\x00v\x00i\x00e\x00w\x00.\x00s\x00c\x00m\x00.\x00n\x00u\x00m\x00b\x00e\x00r\x00O\x00f\x00V\x00i\x00s\x00i\x00b\x00l\x00e\x00V\x00i\x00e\x00w\x00s' @ 6941 : 1
+2025/03/25-15:14:53.854 b6e Compacting 1@1 + 1@2 files
+2025/03/25-15:14:53.870 b6e Generated table #9@1: 459 keys, 68585 bytes
+2025/03/25-15:14:53.870 b6e Compacted 1@1 + 1@2 files => 68585 bytes
+2025/03/25-15:14:53.878 b6e compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/03/25-15:14:53.878 b6e Delete type=2 #8
+2025/03/25-15:14:53.878 b6e Delete type=2 #5
+2025/03/25-15:14:53.879 b6e Manual compaction at level-1 from '\x00\x03\x01\x02\x01'\x00w\x00o\x00r\x00k\x00b\x00e\x00n\x00c\x00h\x00.\x00v\x00i\x00e\x00w\x00.\x00s\x00c\x00m\x00.\x00n\x00u\x00m\x00b\x00e\x00r\x00O\x00f\x00V\x00i\x00s\x00i\x00b\x00l\x00e\x00V\x00i\x00e\x00w\x00s' @ 6941 : 1 .. (end); will stop at (end)

@@ -1,3 +1,6 @@
-2025/03/20-15:49:56.384 95a Reusing MANIFEST /home/kevin/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
-2025/03/20-15:49:56.407 95a Recovering log #11
-2025/03/20-15:49:56.410 95a Reusing old log /home/kevin/.config/google-chrome/Default/Sync Data/LevelDB/000011.log 
+2025/03/25-11:43:34.008 b6e Reusing MANIFEST /home/kevin/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
+2025/03/25-11:43:34.014 b6e Recovering log #11
+2025/03/25-11:43:34.014 b6e Reusing old log /home/kevin/.config/google-chrome/Default/Sync Data/LevelDB/000011.log 
+2025/03/25-15:48:48.849 b7c Level-0 table #15: started
+2025/03/25-15:48:48.870 b7c Level-0 table #15: 109845 bytes OK
+2025/03/25-15:48:48.899 b7c Delete type=0 #11

@@ -16,7 +16,7 @@
   <property name="last-toolbar-item-order" type="string" value="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17"/>
   <property name="last-toolbar-visible-buttons" type="string" value="0,1,1,1,1,0,0,0,0,0,1,1,0,0,1,0,1,1"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_38_PERCENT"/>
-  <property name="last-details-view-column-widths" type="string" value="50,50,141,129,131,148,50,50,612,50,50,75,50,139"/>
+  <property name="last-details-view-column-widths" type="string" value="50,50,158,129,131,148,50,50,556,50,50,77,50,176"/>
   <property name="last-location-bar" type="string" value="ThunarLocationButtons"/>
   <property name="last-splitview-separator-position" type="int" value="372"/>
   <property name="last-details-view-visible-columns" type="string" value="THUNAR_COLUMN_DATE_MODIFIED,THUNAR_COLUMN_NAME,THUNAR_COLUMN_SIZE,THUNAR_COLUMN_TYPE"/>

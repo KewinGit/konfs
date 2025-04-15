@@ -1,2 +1,6 @@
 [Added Associations]
 text/plain=org.xfce.mousepad.desktop;
+application/x-zerosize=code.desktop;
+
+[Default Applications]
+application/x-zerosize=code.desktop
