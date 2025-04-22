@@ -199,6 +199,7 @@
     pkgs.alacritty        # terminale 2
     pkgs.wpa_supplicant   # rete
     pkgs.blueman          # bluetooth
+    pkgs.spice-gtk
   ];
 
   # Virtualizzazione

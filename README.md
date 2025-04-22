@@ -129,3 +129,21 @@ Non serve per ora
 ```
 ~/.local/share/fonts
 ```
+
+# Git pull
+```
+sudo git pull
+```
+
+# Git commit
+```
+sudo git commit -a -m 'VAR: eseguito copia conf su nixhost'
+```
+
+# Git push 
+Da vs con login su git hub
+
+# Ottenere i permessi per fare pull / stage / commit da vscode
+cd <cartella>
+ls -al
+sudo chown -R yourname:yourgroup *
